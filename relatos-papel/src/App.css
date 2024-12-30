@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f6f6;
+  font-family: 'Arial', sans-serif;
+}
+
+.app__navbar {
+  margin-bottom: 2rem;
+}
+
+.app__content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.app__footer {
+  text-align: center;
+  padding: 3rem;
+  background-color: #7fddd3;
+  font-size: 1.5rem; 
+  color: rgb(0, 0, 0);
+}

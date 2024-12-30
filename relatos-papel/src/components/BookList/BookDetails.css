@@ -1,0 +1,73 @@
+/* Estilos generales para el bloque book-details */
+.book-details {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .book-details__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para los detalles generales (autor, precio, etc.) */
+  .book-details__info {
+    margin-bottom: 15px;
+  }
+  
+  .book-details__info strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Estilo para cada dato dentro de la sección de detalles */
+  .book-details__author,
+  .book-details__price,
+  .book-details__description,
+  .book-details__genre,
+  .book-details__publication-date,
+  .book-details__language,
+  .book-details__pages,
+  .book-details__publisher {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para el botón de "Add to Cart" */
+  .book-details__add-to-cart-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .book-details__add-to-cart-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .book-details__add-to-cart-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Estilo para la descripción del libro */
+  .book-details__description-text {
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+    margin-top: 15px;
+    line-height: 1.8;
+  }
+  
