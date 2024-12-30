@@ -7,7 +7,7 @@ const Cart = ({ closeCart }) => {
   const { cart, removeFromCart } = useCart();
   const navigate = useNavigate();
 
-  const total = cart.reduce((sum, item) => sum + item.price, 0);
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleCheckout = () => {
     closeCart();
@@ -24,7 +24,9 @@ const Cart = ({ closeCart }) => {
           <div key={book.id} className="cart__item">
             <div className="cart__item__details">
               <h3 className="cart__item__title">{book.title}</h3>
-              <p className="cart__item__price">${book.price.toFixed(2)}</p>
+              <p className="cart__item__price">
+                ${book.price.toFixed(2)} x {book.quantity}
+              </p>
             </div>
             <button
               className="cart__item__button"

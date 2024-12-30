@@ -48,10 +48,9 @@
   }
   
   .close-drawer {
-    background: none;
-    border: none;
+    background: #7fddd3;
     font-size: 1.5rem;
-    position: absolute;
+    position: center;
     top: 10px;
     left: 10px;
     cursor: pointer;

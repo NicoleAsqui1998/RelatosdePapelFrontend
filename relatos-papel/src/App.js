@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import BookDetails from './components/BookList/BookDetails';  // Asegúrate de que la ruta sea correcta
+import BookDetails from './components/BookList/BookDetails';
 import Home from './pages/Home';
 import Books from './pages/Books';
 import LandingPage from './pages/Landing/LandingPage';
