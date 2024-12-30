@@ -14,16 +14,16 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="navbar__link">Home</Link>
       <Link to="/books" className="navbar__link">Books</Link>
-      <a className="navbar__link navbar__link--cart" onClick={toggleCart}>
+      <button className="navbar__link navbar__link--cart" onClick={toggleCart}>
         Cart ({cart.length})
-      </a>
+      </button>
 
       {isCartOpen && (
         <div className="cart-drawer">
           <div className="cart-drawer__content">
-            <a className="close-drawer" onClick={toggleCart}>
+            <button className="close-drawer" onClick={toggleCart}>
               Close
-            </a>
+            </button>
             <Cart closeCart={toggleCart} />
           </div>
         </div>
